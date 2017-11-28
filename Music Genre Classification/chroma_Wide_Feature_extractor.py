@@ -2,7 +2,7 @@
 10 frames with a hop length of 5 frames.'''
 
 import librosa as li
-import librosa.feature as lf
+import chroma_extract as lf
 import numpy as np
 import librosa.display as ld
 import scipy.io.wavfile as sc

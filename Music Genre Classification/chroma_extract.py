@@ -1,7 +1,8 @@
 '''This library has fucnctions to extract chromgram form stft.
 Descriptions of various funcitons are :
 1. Hz2Octs converts  from hertz domain to octave domain
-2. chroma filter acts as filter that converts stft into chromastft Chroma_stft=Chroma_filter*stft
+2. chroma filter acts as filter that converts stft into chromastft
+3.Chroma_stft=Chroma_filter*stft
 various intermediate plots are constuced to plot intermediate steps'''
 
 import numpy as np
@@ -78,7 +79,7 @@ plt.figure(1)
 plt.plot(S.T)
 plt.show()'''
 
-def time2chroma(data,sr,n_fft,hoplength):
+def chroma_stft(data,sr,n_fft,hoplength):
     S=lb.stft(data,n_fft,hoplength)
     Filter=chroma_filter(sr,n_fft)
     return Filter*S

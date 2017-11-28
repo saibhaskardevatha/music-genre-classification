@@ -2,7 +2,7 @@
 adn each song'''
 
 
-import librosa.feature as lf
+import chroma_extract as lf
 import numpy as np
 import scipy.io.wavfile as sc
 import matplotlib.pyplot as plt

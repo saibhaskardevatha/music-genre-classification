@@ -1,5 +1,5 @@
 '''This program is used to extract features from chromagram features like chroma centroid,chroma spread,min,max chroma band, chroma flux'''
-import librosa.feature as lf
+import chroma_extract as lf
 import numpy as np
 import scipy.io.wavfile as sc
 import matplotlib.pyplot as plt
