@@ -35,7 +35,7 @@ for gener in geners:                                    #This iterates in variou
             data = data[:,0]
 
 
-        C_DFT=lf.chroma_stft(y=data,sr=rate)
+        C_DFT=lf.chroma_stft(y=data,sr=rate,n_fft=2048,hop_length=512)
         select=range(0,C_DFT.shape[1],6)                #averaging over 5 frames
         for i in range(len(select)-1):
             C_DFT_temp=C_DFT[:,select[i]:select[i+1]]   #grouping 5 frames
