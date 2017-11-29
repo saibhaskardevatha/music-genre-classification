@@ -2,7 +2,7 @@
 import numpy as np
 
 
-def centorid(X,bins):
+def centroid(X,bins):
     N=len(X)
     sum=0
     normal=0
